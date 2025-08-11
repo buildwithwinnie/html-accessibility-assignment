@@ -9,6 +9,76 @@
     <meta name="author" content="Winnie">
 
     <title>HTML5 Accessibility & SEO Basics</title>
+
+    <style>
+        /* Basic styling for clarity and accessibility */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            background: #222;
+            color: #fff;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        header, nav, main, footer {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 16px;
+            background: #fff;
+        }
+        header {
+            border-bottom: 2px solid #eaeaea;
+        }
+        nav ul, footer nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 16px;
+        }
+        nav a, footer nav a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        nav a:hover, footer nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 32px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        footer {
+            font-size: 0.95em;
+            color: #666;
+            border-top: 2px solid #eaeaea;
+        }
+    </style>
 </head>
 <body>
     <!-- Accessibility: skip link for screen readers -->
@@ -35,7 +105,7 @@
         <!-- Introduction Section -->
         <section id="introduction" aria-labelledby="intro-heading">
             <h2 id="intro-heading">Introduction to Semantic HTML</h2>
-            <p>Semantic HTML uses tags that describe their meaning and role in the content, making web pages easier to read for both people and machines. HTML5 introduced many semantic elements that replace generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags with meaningful structure.</p>
+            <p>Semantic HTML uses tags that describe their meaning and role in the content, making web pages easier to read for both people and machines. HTML5 introduced many semantic elements that replace generic tags like <code>&lt;div&gt;</code> with more meaningful ones such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
         </section>
 
         <!-- Accessibility Section -->
@@ -47,7 +117,7 @@
             </article>
             <article>
                 <h3>HTML5 Landmarks</h3>
-                <p>Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> creates clear landmarks for assistive technologies, making navigation faster and easier.</p>
+                <p>Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> creates clear landmarks for assistive technologies, making navigation easier for users of screen readers.</p>
             </article>
         </section>
 
@@ -56,7 +126,7 @@
             <h2 id="seo-heading">SEO Fundamentals</h2>
             <article>
                 <h3>Optimizing Content Structure</h3>
-                <p>Headings should follow a logical hierarchy, starting with <code>&lt;h1&gt;</code> for the page title and moving down through <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> as needed. This helps search engines understand content relationships.</p>
+                <p>Headings should follow a logical hierarchy, starting with <code>&lt;h1&gt;</code> for the page title and moving down through <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> as needed. This helps both users and search engines understand the page content.</p>
             </article>
             <article>
                 <h3>Meta Tags & Descriptions</h3>
@@ -82,4 +152,3 @@
     </footer>
 </body>
 </html>
-
