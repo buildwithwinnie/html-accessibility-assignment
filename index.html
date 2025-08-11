@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML5 basics, accessibility best practices, and beginner SEO in a simple, semantic webpage example.">
+    <meta name="keywords" content="HTML5, Accessibility, SEO, Web Development, Semantic HTML">
+    <meta name="author" content="Your Name">
+
+    <title>HTML5 Accessibility & SEO Basics</title>
+</head>
+<body>
+    <!-- Accessibility: skip link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <h1>HTML5 Accessibility & SEO Basics</h1>
+        <p>Building better websites for humans and search engines</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#seo">SEO</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Introduction Section -->
+        <section id="introduction" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Introduction to Semantic HTML</h2>
+            <p>Semantic HTML uses tags that describe their meaning and role in the content, making web pages easier to read for both people and machines. HTML5 introduced many semantic elements that replace generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags with meaningful structure.</p>
+        </section>
+
+        <!-- Accessibility Section -->
+        <section id="accessibility" aria-labelledby="accessibility-heading">
+            <h2 id="accessibility-heading">Accessibility Best Practices</h2>
+            <article>
+                <h3>Why Accessibility Matters</h3>
+                <p>Web accessibility ensures that people with disabilities can perceive, understand, navigate, and interact with websites. It benefits everyone by improving usability and structure.</p>
+            </article>
+            <article>
+                <h3>HTML5 Landmarks</h3>
+                <p>Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> creates clear landmarks for assistive technologies, making navigation faster and easier.</p>
+            </article>
+        </section>
+
+        <!-- SEO Section -->
+        <section id="seo" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">SEO Fundamentals</h2>
+            <article>
+                <h3>Optimizing Content Structure</h3>
+                <p>Headings should follow a logical hierarchy, starting with <code>&lt;h1&gt;</code> for the page title and moving down through <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> as needed. This helps search engines understand content relationships.</p>
+            </article>
+            <article>
+                <h3>Meta Tags & Descriptions</h3>
+                <p>Including descriptive <code>&lt;meta&gt;</code> tags in the <code>&lt;head&gt;</code> section improves how search engines index and display your page.</p>
+            </article>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" aria-labelledby="conclusion-heading">
+            <h2 id="conclusion-heading">Conclusion</h2>
+            <p>By combining semantic HTML, accessibility best practices, and SEO fundamentals, you can create websites that serve both people and search engines effectively.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="#introduction">Back to Top</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
